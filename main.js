@@ -12,9 +12,9 @@ if (page){
 
 async function News (page) {
 
-    const link = "http://servicodados.ibge.gov.br/api/v3/noticias/?tipo=noticia&qtd=10&page=";
+    const api = "https://servicodados.ibge.gov.br/api/v3/noticias/?tipo=noticia&qtd=10&page=";
     
-    url = link + page;
+    url = api + page;
 
     const noticias = await fetch(url);
 
